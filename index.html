@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: rgb(114, 15, 6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60%; /* Adjust for video container height */
+        }
+
+        video {
+            width: 48%; /* Adjust as needed */
+            max-height: 100%;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+
+        .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px); /* Adjusted to account for top margin */
+    margin-top: 5px; /* Reduced top margin */
+  }
+
+  .button button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a9110e; /* New button color */
+    color: white; /* Text color */
+    border: none;
+    cursor: pointer;
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Video Conferencing</h2>
+    </div>
+    <div class="video-container">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+    <div class="button">
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

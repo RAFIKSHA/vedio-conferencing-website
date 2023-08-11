@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+video {
+    width: 45%;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+}
